@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Project: Event invite</title>
+    <style>
+        body {
+            background-color: rgb(145, 16, 11);
+            border: 10px dashed rgb(188, 188, 196);
+            height: auto;
+            width: auto;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(209, 190, 209);
+            font-size: 40px;
+        }
+
+        h2 {
+            color: rgb(255, 255, 255);
+            font-size: 50px;
+        }
+
+        h3 {
+            color: rgb(209, 190, 209);
+            font-size: 20px;
+        }
+
+        span {
+            font-family: fantasy;
+            font-size: 20px;
+            font-style: italic;
+            color: rgb(14, 5, 117);
+        }
+
+        #details, #activites-buttons {
+            margin: 20px;
+        }
+
+        #det, #act {
+            color: rgb(209, 190, 209);
+            font-size: 18px;
+        }
+
+        #activites-buttons {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        #activites {
+            flex: 1;
+        }
+
+        #buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-left: 40px;
+        }
+
+        .confirm, .reject {
+            border: 2px solid white;
+            padding: 10px 40px;
+            background: rgb(30, 5, 92);
+            color: white;
+            text-align: center;
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <h1>You're invited</h1>
+    <h2>Fadi's Birthday Party</h2>
+    <h3>Join us for an amazing party to celebrate</h3>
+
+    <div id="details">
+        <span>Details :</span><br>
+        <ul id="det">
+            <li>Date: 10-06-1989</li>
+            <li>Location: <a href="https://www.jdwetherspoon.com/pubs/the-sir-michael-balcon-ealing">Wetherspoon</a></li>
+            <li>Time: 22:00 PM</li>
+        </ul>
+    </div>
+
+    <div id="activites-buttons">
+        <div id="activites">
+            <span>Activities :</span><br>
+            <ul id="act">
+                <li>Dancing</li>
+                <li>Drinking</li>
+                <li>Dinner</li>
+            </ul>
+        </div>
+        <div id="buttons">
+            <a class="confirm" href="#">Confirm</a>
+            <a class="reject" href="#">Decline</a>
+        </div>
+    </div>
+</body>
+</html>
